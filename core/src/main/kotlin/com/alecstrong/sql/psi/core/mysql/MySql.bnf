@@ -181,6 +181,6 @@ alter_table_add_index ::= 'ADD' [ UNIQUE ] ( INDEX | KEY ) [ {index_name} ] '(' 
 
 alter_table_drop_index ::= 'DROP' ( INDEX | KEY ) {index_name}
 
-placement_clause ::= 'FIRST' | ( AFTER {column_name} )
+alter_table_convert_character_set ::= 'CONVERT' 'TO' 'CHARACTER' 'SET' {identifier} [ COLLATE {identifier} ]
 
-alter_table_convert_character_set ::= 'CONVERT' TO 'CHARACTER' SET {identifier} [COLLATE {identifier}]
+placement_clause ::= 'FIRST' | ( AFTER {column_name} )
